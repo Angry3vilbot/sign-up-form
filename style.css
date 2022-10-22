@@ -1,0 +1,32 @@
+*{  /*Padding+Margin reset*/
+    padding: 0;
+    margin: 0; 
+}
+#website-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+#banner-container{
+    width: 33vw;
+    height: 100vh;
+    background: no-repeat url(pillars.png);
+    background-size: auto 150%;
+}
+#logo-background img{
+    width: 200px;
+    height: 100px;
+}
+#logo-background{
+    margin-top: 30%;
+    display: flex;
+    align-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 33vw;
+    height:100px;
+    justify-content: center;
+}
+#main-container{
+    width: 66vw;
+    height: 100vh;
+}

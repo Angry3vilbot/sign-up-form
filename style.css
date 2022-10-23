@@ -1,7 +1,15 @@
 /*No adaptive design because there is not supposed to be any*/
 *{  /*Padding+Margin reset*/
     padding: 0;
-    margin: 0; 
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+*:focus { /*Remove standard outline for input in Firefox*/
+    outline:0px none transparent;
 }
 #website-container{
     width: 100vw;
@@ -10,7 +18,9 @@
 }
 #banner-container{
     width: 33vw;
-    height: 100vh;
+    height: 110vh;
+    top: 0;
+    bottom: 0;
     background: no-repeat url(pillars.png);
     background-size: auto 150%;
 }
@@ -33,7 +43,67 @@
 }
 #main-container h3:first-child{
     margin-top: 150px;
+    padding-left: 50px;
+}
+#main-container h3{
+    padding-left: 50px;
+    margin-top: 25px;
+}
+a{
+    text-decoration: none;
+    color: darkblue;
+}
+a:hover{
+    border-bottom: 2px solid darkblue;
+}
+strong{
+    font-style: italic;
 }
 #form-container{
+    margin-top: 80px;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    height: 250px;
+}
+#form-inner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 50px;
+}
+.form{
+    width: 50%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+}
+legend{
+    font-size: 24px;
+    font-weight: 400;
+    padding-left: 50px;
+}
+input{
+    width: 220px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    height: 30px;
+}
+input:focus:required{
+    border: 2px solid blue;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+input:focus:required:invalid{
+    border: 2px solid red;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+#confirmButton{
+    background-color: darkblue;
+    color: white;
+    font-size: 16px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+#confirmButton:active{
+    background-color: rgb(12, 12, 165);
 }

@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -13,27 +16,44 @@
             <div id="logo-background"><img src="logo.svg"></div>
         </div>
         <div id="main-container">
-            <h3>This is not a real online service! However it is still pretty cool and I like how it turned out. Some
+            <h3>This is not a <strong>real</strong> online service! However it is still pretty cool and I like how it turned out. Some
             random filler text to gauge how it will look like, personally I think it looks quite swell.<br>
-            Alright time to add another tag.</h3>
-            <h3>Here is another tag.</h3>
+            Alright time to <strong>add</strong> another tag.</h3>
+            <h3>Here is <strong>another</strong> tag.</h3>
             <div id="form-container">
                 <form>
                     <legend>Let's do this!</legend>
-                    <label for="name">First Name</label>
-                    <input type="text" id="name" name="name">
-                    <label for="lastname">Last Name</label>
-                    <input type="text" id="lastname" name="lastname">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email">
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone">
-                    <label for="password">Password</label>
-                    <input type="text" id="password" name="password">
-                    <label for="passwordConfirm">Confirm Password</label>
-                    <input type="text" id="passwordConfirm" name="passwordConfirm">
+                    <div id="form-inner">  
+                        <div class="form">
+                            <label for="name">First Name</label>
+                            <input type="text" id="name" required name="name">
+                        </div>
+                        <div class="form">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" id="lastname" required name="lastname">
+                        </div>
+                        <div class="form">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required name="email">
+                        </div>
+                        <div class="form">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" required name="phone">
+                        </div>
+                        <div class="form">
+                            <label for="password">Password</label>
+                            <input type="text" id="password" required name="password">
+                        </div>
+                        <div class="form">
+                            <label for="passwordConfirm">Confirm Password</label>
+                            <input type="text" id="passwordConfirm" required name="passwordConfirm">
+                        </div>
+                    </div>
+
                 </form>
             </div>
+            <input type="button" id="confirmButton" value="Create Account">
+            <p style="padding-top: 20px; padding-left: 40px;">Already have an account? <a href="#">Log in</a></p>
         </div>
     </div>
 </body>
